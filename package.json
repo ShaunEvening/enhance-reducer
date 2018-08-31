@@ -1,0 +1,47 @@
+{
+  "name": "enhance-reducer",
+  "version": "0.0.1",
+  "description": "A collection of enhancer functions for adding repeated functionality to reducers",
+  "repository": "https://github.com/ShaunLloyd/enhance-reducer",
+  "author": "shaun lloyd <shaunlloydmedia@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "yarn clean:dist && tsc",
+    "clean": "yarn clean:dependencies && yarn clean:dist",
+    "clean:dependencies": "rimraf node_modules",
+    "clean:dist": "rimraf dist",
+    "lint": "tslint -c ./tslint.json './src/**/*.ts'",
+    "prettier:fix": "pretty-quick --staged",
+    "precommit": "yarn prettier:fix",
+    "publish": "yarn build && npm publish",
+    "test": "jest --verbose",
+    "test:watch": "yarn test --watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.1",
+    "husky": "^0.14.3",
+    "jest": "^23.1.0",
+    "prettier": "^1.13.5",
+    "pretty-quick": "^1.6.0",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^3.0.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/preprocessor.js"
+    },
+    "testMatch": [
+      "<rootDir>/src/**/?(*.)(spec|test).(ts|js)"
+    ]
+  }
+}
