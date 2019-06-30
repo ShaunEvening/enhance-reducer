@@ -24,10 +24,8 @@ const isLoadingReducer = <State>(state: State): State =>
 const successReducer = <State>(state: State): State =>
   Object.assign({}, state, { error: false, isLoading: false, success: true });
 
-const errorReducer = <State, Action extends ReducerAction = ReducerAction>(
-  state: State,
-  action: Action,
-): State => Object.assign({}, state, { error: action.payload, isLoading: false, success: false });
+const errorReducer = <State>(state: State): State =>
+  Object.assign({}, state, { error: true, isLoading: false, success: false });
 
 const noopReducer = <State>(state: State): State => state;
 

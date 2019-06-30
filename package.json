@@ -1,6 +1,6 @@
 {
   "name": "enhance-reducer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A collection of enhancer functions for adding repeated functionality to reducers",
   "repository": "https://github.com/ShaunLloyd/enhance-reducer",
   "author": "shaun lloyd <shaunlloydmedia@gmail.com>",
