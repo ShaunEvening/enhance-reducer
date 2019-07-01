@@ -1,13 +1,17 @@
 {
   "name": "enhance-reducer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of enhancer functions for adding repeated functionality to reducers",
   "repository": "https://github.com/ShaunLloyd/enhance-reducer",
+  "bugs": "https://github.com/ShaunLloyd/enhance-reducer/issues",
   "author": "shaun lloyd <shaunlloydmedia@gmail.com>",
   "license": "MIT",
   "private": false,
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "yarn clean:dist && tsc",
     "clean": "yarn clean:dependencies && yarn clean:dist",
