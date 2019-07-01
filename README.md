@@ -1,5 +1,7 @@
 # Enhance Reducer
 
+[![CircleCI](https://circleci.com/gh/ShaunLloyd/enhance-reducer/tree/master.svg?style=svg)](https://circleci.com/gh/ShaunLloyd/enhance-reducer/tree/master) [![npm version](https://badge.fury.io/js/enhance-reducer.svg)](https://badge.fury.io/js/enhance-reducer)
+
 a group of utility functions for composing additional functionality into a reducer. Available for JavaScript and TypeScript.
 
 ## Getting Started

@@ -1,5 +1,4 @@
-import { ReducerEnhancer, Reducer } from '../types';
-import { ReducerAction } from '../../dist/types';
+import { ReducerEnhancer, Reducer, ReducerAction } from '../types';
 
 /**
  * Create a pipe of reducer enhancers for your base reducer
